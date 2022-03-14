@@ -1,1 +1,7 @@
-package test_go
+package main
+
+import "github.com/test-go/other"
+
+func main() {
+	other.PrintHeart()
+}
