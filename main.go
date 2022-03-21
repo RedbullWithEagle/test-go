@@ -1,7 +1,7 @@
 package main
 
-import "github.com/test-go/other"
+import base_type "github.com/test-go/base-type"
 
 func main() {
-	other.TestBirthDay()
+	base_type.TestSyncMap()
 }
