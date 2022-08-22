@@ -1,6 +1,7 @@
 package main
 
 import (
+
 	"fmt"
 	"time"
 
@@ -8,9 +9,11 @@ import (
 )
 
 func main() {
+
 	if err :=base_type.TestPanicError();err !=nil{
 		fmt.Println(err)
 	}
 
 	time.Sleep(5*time.Second)
+
 }
