@@ -42,5 +42,38 @@ func TestError() error {
 		fmt.Println(err)
 	}
 	fmt.Println(err)
-	return nil
+	return err
+}
+
+func TestFuncError() error{
+	var err error
+	defer func(err error) {
+		err = errors.New("TestFuncError")
+	}(err)
+
+	return err
+}
+
+/**********************************************************
+panic和recover使用注意事项
+1.recover必须在defer函数中使用，但是不能被 defer 直接调用
+   defer recover不能恢复
+2.recover只能恢复同一个协程中的panic，
+所以必须与可能发生panic的协程在同一个协程中才生效
+3.如果返回error不声明，在内部声明，defer里面的赋值是不会返回的
+************************************************************/
+func TestPanicError() (err error){
+	defer func() {
+		if r:= recover(); r!=nil{
+			err = errors.New(fmt.Sprintf("recover:%s",r))
+		}
+	}()
+
+	//如果这里协程方式启动raisePanic，则不会捕获到
+	raisePanic()
+	return err
+}
+
+func raisePanic(){
+	panic("have a painc")
 }

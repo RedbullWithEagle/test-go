@@ -3,6 +3,7 @@ package base_type
 import (
 	"fmt"
 	"math"
+	"reflect"
 )
 
 /***********************************************
@@ -87,4 +88,16 @@ func TestDivide() {
 	fmt.Println(math.Round(11.46)) //11
 	fmt.Println(math.Round(11.68)) //12
 	fmt.Println(math.Round(11.5))  //12
+}
+
+func TestInt() {
+	var a uint = 0
+	var b uint = 1
+	c := a - b
+	fmt.Println(reflect.TypeOf(c))
+	// a 和b 都是无法号 c=-1
+	//计算机中的数都是用补码表示
+	//正数的原码，反码，补码都相同
+	//负数补码 = 该数绝对值的原码的反码+1
+	fmt.Println(c)
 }

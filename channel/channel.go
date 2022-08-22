@@ -1,4 +1,4 @@
-package other
+package cha
 
 import (
 	"fmt"
@@ -10,8 +10,6 @@ const PrintCount = 10
 
 /******************************************************************
 *循环打印 dog cat fish  10次
-*
-*
 ******************************************************************/
 func dog(dogChan, catChan chan int, wg *sync.WaitGroup) {
 	counter := 0
@@ -87,6 +85,7 @@ func TestPrintAnimalsNoBuffer() {
 	catChan := make(chan int)
 	fishChan := make(chan int)
 	wg.Add(3)
+
 
 	//下面这句话放在这里，会报错：
 	//fatal error: all goroutines are asleep - deadlock!
