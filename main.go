@@ -1,19 +1,12 @@
 package main
 
 import (
-
-	"fmt"
 	"time"
 
-	base_type "github.com/test-go/base-type"
+	"github.com/test-go/sync"
 )
 
 func main() {
-
-	if err :=base_type.TestPanicError();err !=nil{
-		fmt.Println(err)
-	}
-
-	time.Sleep(5*time.Second)
-
+	sync.TestWaitGroupWait()
+	time.Sleep(5 * time.Second)
 }

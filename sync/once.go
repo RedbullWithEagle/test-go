@@ -26,3 +26,5 @@ func TestSync() {
 	wg.Wait()
 	fmt.Printf("over")
 }
+
+

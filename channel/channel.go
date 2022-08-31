@@ -115,7 +115,7 @@ func ChannelTimeout() {
 				fmt.Println(str)
 				//这里设置超时时间，如果没有走到上面，3秒后，会走到下面
 			case <-time.After(3 * time.Second):
-				fmt.Println("超时,time:%d", time.Now().Unix())
+				fmt.Printf("超时,time:%d\n", time.Now().Unix())
 				quit <- true
 			}
 		}

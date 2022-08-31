@@ -87,6 +87,7 @@ func TestDog() {
 
 /************************************************************
 如何限制并发协程的数量？
+控制channel缓冲的数量来实现
  **********************************************************/
 func job(i int, limitChan chan struct{}, group *sync.WaitGroup) {
 	limitChan <- struct{}{}

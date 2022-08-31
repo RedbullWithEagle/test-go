@@ -1,21 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4bde0f58-54f7-4bf9-bc0c-6e288964f419" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/other/inheritance.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sync/once.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sync/waitgroup.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/test-go.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+    <list default="true" id="41140d95-94f6-4915-bb75-2684d0a96401" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/sync/context.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-type/slice.go" beforeDir="false" afterPath="$PROJECT_DIR$/base-type/slice.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/channel/channel.go" beforeDir="false" afterPath="$PROJECT_DIR$/channel/channel.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/channel/dog.go" beforeDir="false" afterPath="$PROJECT_DIR$/channel/dog.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/other/date.go" beforeDir="false" afterPath="$PROJECT_DIR$/other/date.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sync/once.go" beforeDir="false" afterPath="$PROJECT_DIR$/sync/once.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sync/waitgroup.go" beforeDir="false" afterPath="$PROJECT_DIR$/sync/waitgroup.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
   </component>
   <component name="GOROOT" path="C:\Program Files\Go" />
   <component name="Git.Settings">
@@ -24,47 +48,140 @@
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
-  <component name="ProjectId" id="2Dh2AoGJ7R6YNz24N3nCsYJ387t" />
+  <component name="ProjectId" id="2Dh38DmGrS05arUPNf0e80DktAd" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../bin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../goProjects/src/github.com/pingguoxueyuan/gostudy" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
-  <component name="RunManager">
-    <configuration name="main" type="GoApplicationRunConfiguration" factoryName="Go Application">
+  <component name="RunManager" selected="Go Build.go build main.go">
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="test-go" />
       <working_directory value="$PROJECT_DIR$" />
       <go_parameters value="-i" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/main.go" />
-      <package value="github.com/test-go" />
       <directory value="$PROJECT_DIR$" />
       <output_directory value="$PROJECT_DIR$/../../../bin" />
       <method v="2" />
     </configuration>
+    <configuration name="TestFileLogger in github.com/test-go/logger" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="test-go" />
+      <working_directory value="$PROJECT_DIR$/logger" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/test-go/logger" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^TestFileLogger$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="logger_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="test-go" />
+      <working_directory value="$PROJECT_DIR$/logger" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <package value="github.com/test-go" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/logger/logger_test.go" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build main.go" />
+        <item itemvalue="Go Test.TestFileLogger in github.com/test-go/logger" />
+        <item itemvalue="Go Test.logger_test.go" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="174" width="1092" height="716" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1661136970753">
+    <state x="414" y="174" width="1092" height="716" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1661349370419">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="174" width="1092" height="716" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1661136970753" />
-    <state x="740" y="286" key="FileChooserDialogImpl" timestamp="1661136966497">
+    <state x="414" y="174" width="1092" height="716" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1661349370419" />
+    <state x="777" y="217" key="FileChooserDialogImpl" timestamp="1661755930080">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="286" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1661136966497" />
+    <state x="777" y="217" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1661755930080" />
+    <state width="1877" height="236" key="GridCell.Tab.0.bottom" timestamp="1661928167264">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="236" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1661928167264" />
+    <state width="1877" height="236" key="GridCell.Tab.0.center" timestamp="1661928167264">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="236" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1661928167264" />
+    <state width="1877" height="236" key="GridCell.Tab.0.left" timestamp="1661928167264">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="236" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1661928167264" />
+    <state width="1877" height="236" key="GridCell.Tab.0.right" timestamp="1661928167264">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="236" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1661928167264" />
+    <state width="1877" height="236" key="GridCell.Tab.1.bottom" timestamp="1661928057245">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="236" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1661928057245" />
+    <state width="1877" height="236" key="GridCell.Tab.1.center" timestamp="1661928057244">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="236" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1661928057244" />
+    <state width="1877" height="236" key="GridCell.Tab.1.left" timestamp="1661928057244">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="236" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1661928057244" />
+    <state width="1877" height="236" key="GridCell.Tab.1.right" timestamp="1661928057245">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="236" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1661928057245" />
+    <state x="662" y="252" width="596" height="536" key="find.popup" timestamp="1661612089905">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="662" y="252" width="596" height="536" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1661612089905" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/logger/logger_test.go</url>
+          <line>33</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/logger/file.go</url>
+          <line>91</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

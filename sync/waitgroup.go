@@ -6,6 +6,9 @@ import (
 	"time"
 )
 
+/******************************************************
+一个 WaitGroup 对象可以等待一组协程结束
+******************************************************/
 func TestWaitGroup(){
 	tasks  := []func(){
 		func() { time.Sleep(time.Second); fmt.Println("1 sec later") },
@@ -23,4 +26,24 @@ func TestWaitGroup(){
 	}
 	wg.Wait()           // 1-4
 	fmt.Println("exit")
+}
+
+/************************************************************
+1.wg add 之后
+2.可以多次 wg.Wait，只要没有done
+3.wg.done后，可以唤起所有的wg.Wait
+************************************************************/
+func TestWaitGroupWait() {
+	var wg sync.WaitGroup
+	fmt.Printf("test wait group:%d\n",time.Now().Unix())
+
+	wg.Add(1)
+	for i := 0; i < 10; i++ {
+		go func() {
+			wg.Wait()
+			fmt.Printf("wg wait:%d\n",time.Now().Unix())
+		}()
+	}
+	time.Sleep(5 * time.Second)
+	wg.Done()
 }
