@@ -23,8 +23,11 @@ type student struct {
 	Age  int
 }
 
-func TestPointerMap() {
-	m := make(map[string]student)
+func (s *student) String() string {
+	return fmt.Sprintf("name:%v,age:%v", s.Name, s.Age)
+}
+func parseStudent()map[string]*student {
+	m := make(map[string]*student)
 
 	stus := []student{
 		{Name: "liu", Age: 34},
@@ -35,7 +38,20 @@ func TestPointerMap() {
 	//如果切片是指针类型，则打印的都是一个地址
 	//即最后赋值的地址
 	for _, v := range stus {
-		m[v.Name] = v
+		tmp := &student{
+			Name: v.Name,
+			Age:  v.Age,
+		}
+		m[v.Name] = tmp
 	}
-	fmt.Println(m)
+	return m
+}
+
+func TestParseStudent(){
+	users := parseStudent()
+	for _,u:= range users{
+		go func(u student) {
+			fmt.Println(u)
+		}(*u)
+	}
 }

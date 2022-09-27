@@ -1,12 +1,11 @@
 package main
 
-import (
-	"time"
-
-	"github.com/test-go/sync"
-)
+import cha "github.com/test-go/channel"
 
 func main() {
-	sync.TestWaitGroupWait()
-	time.Sleep(5 * time.Second)
+	//base_type.UseSubSlice()
+	//sync.TestWaitGroupWait()
+	//time.Sleep(5 * time.Second)
+	//base_type.TestDefer()
+	cha.TestCha()
 }

@@ -77,3 +77,31 @@ func TestPanicError() (err error){
 func raisePanic(){
 	panic("have a painc")
 }
+
+type Error struct {
+	Code   int
+	Reason string
+}
+
+func (e Error) Error() string {
+	return fmt.Sprintf("%v:%v", e.Code, e.Reason)
+}
+
+func ops() error {
+	var err *Error = &Error{
+		Code: 0,
+		Reason: "",
+	}
+	return err
+}
+
+func TestOPSError()  {
+	err := ops()
+	fmt.Println(err)
+	if err != nil {
+		fmt.Println("error:", err)
+	} else {
+		fmt.Println("success")
+	}
+
+}
